@@ -1,0 +1,80 @@
+:root {
+    --color-dark: black;
+    --color-light: white;
+    --color-light-hover: rgba(255, 255, 255, 0.9);
+    --color-primary-1: #ff2f86;
+    --color-secondary-1: #d9223a;
+    --color-secondary-2: #ffee56;
+
+    --title-1: "Rubik Mono One", monospace;
+    --title-2: "Merriweather Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.site-head-1, .site-head-2, .site-head-3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    place-content: center;
+}
+
+.site-head-1 {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+
+    font-size: 1rem;
+    font-family: var(--title-2);
+
+    padding: 1rem;
+}
+
+.site-head-2 {
+    color: var(--color-light);
+    background-color: var(--color-primary-1);
+
+    font-size: 2rem;
+    font-family: var(--title-1);
+
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.site-head-3 {
+    color: var(--color-secondary-2);
+    background-color: var(--color-secondary-1);
+
+    font-size: 1.5rem;
+    font-family: var(--title-2);
+
+    padding: 0.3rem;
+}
+
+.site-head-1 a, .site-head-2 a, .site-head-3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-head-1 a:hover, .site-head-2 a:hover {
+    color: var(--color-light-hover);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+
+    padding: 0;
+    margin: 0;
+}
+
+.site-head-1-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    padding: 0;
+    margin: 0;
+}
