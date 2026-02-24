@@ -93,15 +93,9 @@ img {
 
 
 .cta {
-    size: var(--hero-text-size);
-    
-    border-color: var(--color-light);
-    border-width: 1rem;
-    border: solid;
+    background-image: url(images/köp-nu-knapp-plain.png);
     color: inherit;
-
     padding: 0.7rem;
-    
     place-self: center;
 
     font-family: var(--title-1);
