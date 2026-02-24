@@ -8,6 +8,7 @@
 
     --title-1: "Rubik Mono One", monospace;
     --title-2: "Merriweather Sans", sans-serif;
+    --hero-text: "Caveat Brush", cursive;
 }
 
 img {
@@ -101,8 +102,9 @@ img {
 }
 
 .hero-content {
-    display: flex;
-    justify-content: flex-end;
+    font-family: "Caveat Brush", cursive;
+    font-size: 3rem;
+    color: var(--color-light);
 }
 
 .hero-image {
