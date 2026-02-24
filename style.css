@@ -9,13 +9,17 @@
     --title-1: "Rubik Mono One", monospace;
     --title-2: "Merriweather Sans", sans-serif;
     --hero-text: "Caveat Brush", cursive;
+
+    --hero-text-size: clamp(0.5rem, 3rem + 4vw, 10rem);
 }
 
 img {
     max-width: 100%;
 }
 
-.site-head-1, .site-head-2, .site-head-3 {
+.site-head-1,
+.site-head-2,
+.site-head-3 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -35,7 +39,7 @@ img {
 .site-head-2 {
     color: var(--color-light);
     background-color: var(--color-primary-1);
-    
+
     list-style: none;
 
     font-size: 2rem;
@@ -55,12 +59,15 @@ img {
     padding: 0.3rem;
 }
 
-.site-head-1 a, .site-head-2 a, .site-head-3 a {
+.site-head-1 a,
+.site-head-2 a,
+.site-head-3 a {
     color: inherit;
     text-decoration: none;
 }
 
-.site-head-1 a:hover, .site-head-2 a:hover {
+.site-head-1 a:hover,
+.site-head-2 a:hover {
     color: var(--color-light-hover);
 }
 
@@ -85,6 +92,22 @@ img {
 }
 
 
+.cta {
+    size: var(--hero-text-size);
+    
+    border-color: var(--color-light);
+    border-width: 1rem;
+    border: solid;
+    color: inherit;
+
+    padding: 0.7rem;
+    
+    place-self: center;
+
+    font-family: var(--title-1);
+    text-decoration: none;
+    
+}
 
 
 
@@ -94,17 +117,22 @@ img {
     place-items: center;
     max-height: 60vh;
 
-    padding: 2rem;
+    margin-top: 2rem;
 }
 
-.hero > * {
+.hero>* {
     grid-area: hero;
 }
 
 .hero-content {
+    display: flex;
+    flex-direction: column;
     font-family: "Caveat Brush", cursive;
-    font-size: 3rem;
     color: var(--color-light);
+}
+
+.hero-content h1 {
+    font-size: var(--hero-text-size);
 }
 
 .hero-image {
