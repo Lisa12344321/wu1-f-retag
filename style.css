@@ -126,13 +126,10 @@ img {
 .hero-list {
     list-style: none;
     text-align: center;
-
-    --gap: 0.5rem;
-    --min: 10ch;
     
-    display: grid;
-    grid-gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 
     padding: 0;
     margin: 0;
@@ -169,19 +166,4 @@ img {
 .container-1 {
     width: min(100vw - 3rem, var(--container-width-1));
     margin-inline: auto;
-}
-
-.hero-deals {
-    list-style: none;
-    text-align: center;
-
-    --gap: 0.5rem;
-    --min: 10ch;
-    
-    display: grid;
-    grid-gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-
-    padding: 0;
-    margin: 0;
 }
