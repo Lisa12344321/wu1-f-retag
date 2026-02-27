@@ -3,14 +3,17 @@
     --color-light: white;
     --color-light-hover: rgba(255, 255, 255, 0.9);
     --color-primary-1: #ff2f86;
+    --color-primary-2: #2a9be2;
     --color-secondary-1: #d9223a;
     --color-secondary-2: #ffee56;
 
     --title-1: "Rubik Mono One", monospace;
     --title-2: "Merriweather Sans", sans-serif;
-    --hero-text: "Caveat Brush", cursive;
+    --text: "Roboto", sans-serif;
 
     --hero-text-size: clamp(0.5rem, 3rem + 4vw, 10rem);
+    --container-width-1: 58rem;
+    --container-width-2: 110rem;
 }
 
 img {
@@ -48,6 +51,7 @@ img {
 
     align-items: center;
     place-content: center;
+    
 
 
 }
@@ -114,6 +118,7 @@ img {
     grid-template-areas: "hero";
     place-items: center;
     max-height: 60vh;
+    margin-bottom: 4rem;
 }
 
 .hero>* {
@@ -128,4 +133,58 @@ img {
     max-height: 60vh;
     width: 80%;
     object-position: center;
+}
+
+.hero-knapp {
+    max-height: 60vh;
+    width: 80%;
+    object-position: center;
+}
+
+.site-footer {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    font-family: var(--text);
+    font-size: 2rem;
+}
+
+.site-footer ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer p {
+    margin-top: 3rem;
+}
+
+.site-footer a {
+    color: inherit;
+}
+
+.container-1 {
+    width: min(100vw - 3rem, var(--container-width-1));
+    margin-inline: auto;
+}
+
+.hero-deals {
+    list-style: none;
+    text-align: center;
+
+    --gap: 0.5rem;
+    --min: 10ch;
+    
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+
+    padding: 0;
+    margin: 0;
 }
