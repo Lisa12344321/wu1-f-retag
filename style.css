@@ -11,7 +11,7 @@
     --title-2: "Merriweather Sans", sans-serif;
     --text: "Roboto", sans-serif;
 
-    --container-width-1: 65rem;
+    --container-width-1: 75rem;
     --nav-width: 87rem;
 }
 
@@ -171,7 +171,7 @@ img {
 }
 
 .hero-ul {    
-    width: min(100vw - 3rem, 40rem);
+    width: min(100vw - 3rem, 50rem);
     margin-inline: auto;
 
     display: flex;
