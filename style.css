@@ -11,9 +11,8 @@
     --title-2: "Merriweather Sans", sans-serif;
     --text: "Roboto", sans-serif;
 
-    --hero-text-size: clamp(0.5rem, 3rem + 4vw, 10rem);
-    --container-width-1: 58rem;
-    --container-width-2: 110rem;
+    --container-width-1: 65rem;
+    --nav-width: 87rem;
 }
 
 img {
@@ -113,9 +112,6 @@ img {
 
     list-style: none;
 
-    font-size: 2rem;
-    font-family: var(--title-1);
-
     padding: 1rem;
 
     align-items: center;
@@ -125,11 +121,12 @@ img {
 
 .hero-list {
     list-style: none;
-    text-align: center;
     
+
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 
     padding: 0;
     margin: 0;
@@ -166,4 +163,32 @@ img {
 .container-1 {
     width: min(100vw - 3rem, var(--container-width-1));
     margin-inline: auto;
+}
+
+.nav {
+    width: min(100vw - 3rem, var(--nav-width));
+    margin-inline: auto;
+}
+
+.hero-ul {    
+    width: min(100vw - 3rem, 40rem);
+    margin-inline: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+.hero-ul-2 {
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
