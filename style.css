@@ -12,10 +12,12 @@
     --text: "Roboto", sans-serif;
 
     --container-width-1: 75rem;
+    --container-width-2: 70rem;
     --nav-width: 87rem;
+    --hero-ul-width: 50rem;
 }
 
-body {
+body, html {
     margin: 0;
 }
 
@@ -147,6 +149,7 @@ img {
 
     font-family: var(--text);
     font-size: 2rem;
+    margin: 0;
 }
 
 .site-footer ul{
@@ -171,13 +174,20 @@ img {
     margin-inline: auto;
 }
 
+.container-2 {
+    width: min(100vw - 3rem, var(--container-width-2));
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    
+}
+
 .nav {
     width: min(100vw - 3rem, var(--nav-width));
     margin-inline: auto;
 }
 
 .hero-ul {    
-    width: min(100vw - 3rem, 50rem);
+    width: min(100vw - 3rem, var(--hero-ul-width));
     margin-inline: auto;
 
     display: flex;
@@ -198,9 +208,54 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    padding-right: 2rem;
     margin: 0;
 }
 
 .hero-img {
     border-radius: 5%;
+}
+
+.article {
+    background-color: var(--color-primary-2);
+    color: var(--color-light);
+    margin-bottom: 3rem;
+}
+
+.article .div-1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.article .div-2 {
+    list-style: none;
+    background-color: var(--color-secondary-2);
+    color: var(--color-dark);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.article h2 {
+    font-size: 1.5rem;
+    font-family: var(--title-2);
+    color: var(--color-light);
+    background-color: var(--color-primary-1);
+    padding: 0.5rem;
+}
+
+.article h1 {
+    font-size: 2rem;
+    font-family: var(--title-1);
+    margin: 0;
+}
+
+.article p {
+    font-size: 1.5rem;
+    font-family: var(--text);
+    margin-top: 1rem;
 }
