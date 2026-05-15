@@ -327,7 +327,7 @@ aside {
 aside h2 {
     color: var(--color-primary-2);
     font-size: 1.5rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0;
 }
 
 .undercategories {
@@ -343,7 +343,7 @@ aside h2 {
 }
 
 .candy-sort {
-    padding: 0;
+    padding: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     background-color: var(--color-primary-1);
@@ -358,6 +358,55 @@ aside h2 {
 
 article {
     background-color: var(--color-primary-2);
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.article-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5rem;
+    margin-bottom: 5rem;
+    justify-self: center;
+    padding-inline-start: 0;
+    gap: 2.66%;
+}
+
+@media (max-width: 1700px) {
+    .candy-li {
+        width: 31%;
+    }
+
+}
+
+@media (min-width: 1700px) {
+    .candy-li {
+        width: 23%;
+    }
+}
+
+.candy-li {
+    list-style: none;
+    padding: 0;
+    font-family: var(--text);
+    text-align: center;
+    background-color: var(--color-light);
+    margin-bottom: 1rem;
+}
+
+.candy-name {
+    margin: 0;
+}
+
+.price {
+    font-family: var(--title-1);
+    margin: 0.2rem;
+}
+
+.add-button {
+    font-family: var(--title-2);
+    color: var(--color-secondary-2);
+    background-color: var(--color-primary-1);
+    margin: 0;
+}
 
