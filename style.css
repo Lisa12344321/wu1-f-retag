@@ -2,11 +2,14 @@
     --color-dark: black;
     --color-light: white;
     --color-light-hover: rgb(227, 227, 227);
-    --color-primary-1: #ff2f86;
-    --color-primary-2: #2a9be2;
+    --color-primary-1-old: #ff2f86;
+    --color-primary-1: #f01470;
+    --color-primary-2-old: #2a9be2;
+    --color-primary-2: #2789c6;
     --color-secondary-1: #d9223a;
     --color-secondary-2: #ffee56;
-    --color-secondary-2-hover: #eadb4f;
+    --color-secondary-2-hover-old: #eadb4f;
+    --color-secondary-2-hover: #ffe600;
 
     --title-1: "Rubik Mono One", monospace;
     --title-2: "Merriweather Sans", sans-serif;
